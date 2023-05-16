@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +23,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
+  margin: 4px;
+  font-weight: bold;
 }
 
 input {
@@ -24,4 +34,68 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  margin: 12px;
+  font-size: 14px;
+}
+
+.header > .left-links {
+  display: flex;
+  margin-right: auto;
+  gap: 20px;
+}
+
+.header > .right-links {
+  display: flex;
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  /*   
+Another Method
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ 
+  transform: translate(-50%, -50%) ;
+  text-align: center; */
+}
+
+.footer {
+  display: inline-flex;
+  margin-top: auto;
+  background-color: #eeeeee;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.footer > .left-links,
+.footer > .right-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer > .left-links {
+  margin-right: auto;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
 }
